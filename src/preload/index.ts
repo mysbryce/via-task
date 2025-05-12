@@ -1,7 +1,13 @@
-import { contextBridge } from 'electron'
+import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 
-const api = {}
+const api = {
+    windowManager: {
+        minimize: () => ipcRenderer.send('window-manager:minimize'),
+        maximize: () => ipcRenderer.send('window-manager:maximize'),
+        close: () => ipcRenderer.send('window-manager:close')
+    }
+}
 
 if (process.contextIsolated) {
     try {

@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
 @import './base.css';
+
+* {
+    font-family: 'Inter', 'IBM Plex Sans Thai', sans-serif;
+    outline: none !important;
+}
+
+.title-bar {
+    app-region: drag;
+    -webkit-app-region: drag;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.clickable {
+    app-region: no-drag;
+    -webkit-app-region: no-drag;
+}
