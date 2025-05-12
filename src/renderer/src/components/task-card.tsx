@@ -52,7 +52,7 @@ export default function TaskCard({
                     </g>
                 </svg>
 
-                <span>6, August</span>
+                <span>6 August</span>
             </div>
 
             <div className="flex items-end justify-between">
