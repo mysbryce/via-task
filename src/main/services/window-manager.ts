@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from "electron"
+import { app, BrowserWindow, ipcMain } from 'electron'
 
 export default function StartWindowManagerService() {
     ipcMain.on('window-manager:minimize', () => {

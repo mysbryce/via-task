@@ -2,9 +2,9 @@ import { create } from 'zustand'
 
 export const pageNames = ['dashboard']
 
-type PageNames = (typeof pageNames)[number] | string
+export type PageNames = (typeof pageNames)[number] | string
 
-type Page = {
+export type Page = {
     page: PageNames
     setPage: (page: PageNames) => void
 }
